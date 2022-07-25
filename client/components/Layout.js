@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Router from "next/router";
 import NProgress from "nprogress";
+import "nprogress/nprogress.css";
 
 Router.onRouteChangeStart = (url) => NProgress.start();
 Router.onRouteChangeComplete = (url) => NProgress.done();
@@ -16,10 +17,7 @@ const Layout = ({ children }) => {
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous"
       />
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css"
-      />
+      <link rel="stylesheet" href="/static/css/styles.css" />
     </>
   );
 
